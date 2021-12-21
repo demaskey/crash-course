@@ -1,8 +1,13 @@
 import React, {lazy, Suspense} from 'react';
+// import ReactDOM from 'react-dom';
+// import './index.css';
+// import App from './App';
+// import reportWebVitals from './reportWebVitals';
 
 import {Route, Switch} from 'react-router-dom';
 
-const Home = lazy(()=>import('./Home/Home'));
+const Home = lazy(()=>import('./routes/Home/Home'));
+const About = lazy(()=>import('./routes/About/About'));
 
 export default function Routes() {
   return (
@@ -11,15 +16,13 @@ export default function Routes() {
         <Route exact path={'/'}>
           <Home />
         </Route>
+        <Route exact path={'/about'}>
+          <About />
+        </Route>
       </Switch>
     </Suspense>
   );
 }
-
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
 
 // ReactDOM.render(
 //   <React.StrictMode>
