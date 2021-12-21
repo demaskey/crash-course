@@ -1,4 +1,4 @@
-import React, {lazy, Suspense} from 'react';
+import React from 'react';
 import AppRoutes from './routes';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 
