@@ -1,5 +1,5 @@
 import React, {lazy, Suspense} from 'react';
-import Routes from 'routes';
+import AppRoutes from './routes';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
             </li>
           </ul>
           <hr />
-          <Routes />
+          <AppRoutes />
         </div>
       </Router>
     </div>
