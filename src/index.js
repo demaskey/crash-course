@@ -4,25 +4,22 @@ import React, {lazy, Suspense} from 'react';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-import {Route, Switch} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 
 const Home = lazy(()=>import('./routes/Home/Home'));
 const About = lazy(()=>import('./routes/About/About'));
 
-export default function Routes() {
+export default function AppRoutes() {
   return (
     <Suspense fallback={<p>Loading</p>}>
-      <Switch>
-        <Route exact path={'/'}>
-          <Home />
-        </Route>
-        <Route exact path={'/about'}>
-          <About />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path={'/'} element={<Home />} />
+        <Route path={'/about'} element={<About />} />
+      </Routes>
     </Suspense>
   );
 }
+
 
 // ReactDOM.render(
 //   <React.StrictMode>
