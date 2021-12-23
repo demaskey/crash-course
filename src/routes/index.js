@@ -7,10 +7,10 @@ const About = lazy(()=>import('./About/About'));
 export default function AppRoutes() {
     return (
         <Suspense fallback={<p>Loading</p>}>
-            <Routes>
-              <Route path={'/'} element={<Home />} />
-              <Route path={'/about'} element={<About />} />
-            </Routes>
-          </Suspense>
+          <Routes>
+            <Route path={'/'} element={<Home />} />
+            <Route path={'/about'} element={<About />} />
+          </Routes>
+        </Suspense>
     );
 }
