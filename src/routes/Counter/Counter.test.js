@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
-import About from './About';
+import Counter from './Counter';
 
 test('About renders successfully', () => {
-    render(<About />);
+    render(<Counter />);
 });
