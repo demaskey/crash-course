@@ -7,7 +7,7 @@ export function MainNav() {
     const [currentLocation, setCurrentLocation] = useState('Home');
 
     const currentLocationStyle = {
-        'font-weight': 'bold'
+        fontWeight: 'bold'
     };
 
     return (
@@ -24,7 +24,7 @@ export function MainNav() {
                 </li>
                 <li>
                     {currentLocation === 'Counter' && (
-                        <span style={currentLocationStyle} >Counter</span>
+                        <span style={currentLocationStyle}>Counter</span>
                     )}
                     {currentLocation !== 'Counter' && (
                         <Link to="/counter" onClick={ () => setCurrentLocation('Counter')}>Counter</Link>

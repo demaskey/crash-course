@@ -12,6 +12,4 @@ test('Main Navigation renders successfully', () => {
     expect(homeLinkElement).toBeInTheDocument();
     const aboutLinkElement = screen.getByText(/Counter/i);
     expect(aboutLinkElement).toBeInTheDocument();
-    const todoLinkElement = screen.getByText(/To Do's/i);
-    expect(todoLinkElement).toBeInTheDocument();
 });
