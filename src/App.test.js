@@ -5,6 +5,6 @@ test('renders the default content and navigation links', () => {
   render(<App />);
   const homeLinkElement = screen.getByText(/Home/i);
   expect(homeLinkElement).toBeInTheDocument();
-  const aboutLinkElement = screen.getByText(/About/i);
+  const aboutLinkElement = screen.getByText(/Counter/i);
   expect(aboutLinkElement).toBeInTheDocument();
 });
