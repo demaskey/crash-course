@@ -2,9 +2,9 @@ import { Selector } from 'testcafe';
 import { accessibilityTest } from '../utilities/accessibility-tests.tc';
 
 export const homepageTest = async (tc) => {
-    const homeHeaderText = Selector('#Home').innerText;
+    const homeHeaderText = Selector('h2').innerText;
 
-    await tc.expect(homeHeaderText).contains('Home');
+    await tc.expect(homeHeaderText).contains('Hello, World!');
     
     await accessibilityTest(tc);
 };

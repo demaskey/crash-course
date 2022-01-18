@@ -7,6 +7,8 @@
 
 # testing
 /coverage
+/test_results
+/testcafe/reports
 
 # production
 /build
