@@ -1,0 +1,7 @@
+{
+    "screenshots": {
+        "takeOnFails": true,
+        "path": "./testcafe/reports/screenshots/",
+        "pathPattern": "${DATE}_${TIME}_test-${TEST_INDEX}.png"
+    }
+}
