@@ -10,6 +10,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
+    "e2e:chrome": "testcafe chrome ./testcafe/main.tc.js -r json:./testcafe/reports/chrome-report.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
