@@ -5,9 +5,9 @@ export default function  Counter() {
 
     return (
         <>
-            <h2>Counter with State</h2>
-            <p>You clicked {count} times.</p>
-            <button onClick={() => setCount(count + 1)}>
+            <h1>Counter with State</h1>
+            <p id='clickedTxt'>You clicked {count} times.</p>
+            <button id='btnClickMe' onClick={() => setCount(count + 1)}>
                 Click Me!
             </button>
         </>
