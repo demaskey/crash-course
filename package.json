@@ -3,15 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
-    "testcafe": "^1.18.1",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
@@ -40,10 +35,26 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axe-core": "^4.3.5",
+    "axe-testcafe": "^3.0.0",
     "eslint": "^8.6.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-jest-dom": "^4.0.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react-redux": "^3.3.4",
+    "eslint-plugin-testcafe": "^0.2.1",
+    "eslint-plugin-testing-library": "^5.0.3",
     "husky": "^7.0.4",
-    "lint-staged": "^12.1.7"
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1",
+    "testcafe": "^1.18.1",
+    "testing-library": "^0.0.2"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
