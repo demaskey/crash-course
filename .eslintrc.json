@@ -5,7 +5,17 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "react-app",
+        "react-app/jest",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:jest/style",
+        "plugin:jest-dom/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react/recommended",
+        "plugin:react-redux/recommended",
+        "plugin:testing-library/react",
+        "plugin:testcafe/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -15,7 +25,14 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "import",
+        "react",
+        "jsx-a11y",
+        "jest-dom",
+        "jest",
+        "testing-library",
+        "react-redux",
+        "testcafe"
     ],
     "rules": {
     }
