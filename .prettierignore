@@ -1,0 +1,7 @@
+.idea
+.vscode
+package-lock.json
+build/
+coverage/
+node_modedules/
+test_results/
